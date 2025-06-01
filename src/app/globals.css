@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-medieval-light dark:bg-medieval-dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-medieval-primary dark:bg-medieval-secondary rounded-full;
+  }
+
+  /* Selection color */
+  ::selection {
+    @apply bg-medieval-primary/20 dark:bg-medieval-secondary/20;
+  }
+}
+
+@layer components {
+  .medieval-border {
+    @apply border-2 border-medieval-primary dark:border-medieval-secondary rounded-lg p-4;
+  }
+
+  .medieval-shadow {
+    @apply shadow-lg shadow-medieval-primary/10 dark:shadow-medieval-secondary/10;
+  }
+}
