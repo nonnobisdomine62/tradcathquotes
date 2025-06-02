@@ -23,7 +23,7 @@
 
   ::-webkit-scrollbar-thumb {
     @apply bg-medieval-primary dark:bg-medieval-secondary rounded-full;
-  }
+}
 
   /* Selection color */
   ::selection {

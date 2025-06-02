@@ -3,7 +3,7 @@ export interface Quote {
   author: string;
   category: string;
 }
-
+ 
 export type QuotesByCategory = {
   [key: string]: Quote[];
 }; 

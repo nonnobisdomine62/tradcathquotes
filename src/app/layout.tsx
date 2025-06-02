@@ -69,7 +69,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full bg-medieval-light dark:bg-medieval-dark text-medieval-ink dark:text-medieval-light transition-colors duration-200">
         <div className="container mx-auto px-4 py-8">
-          {children}
+        {children}
         </div>
       </body>
     </html>
